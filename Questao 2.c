@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define TAM 3
+#define TAM 5
 
 struct dados
 {
@@ -28,7 +28,7 @@ int i,q;
 
     for(i=0;i<TAM;i++){
         soma=0;
-        for(q=0;q<2;q++){
+        for(q=0;q<3;q++){
             soma+=aluno[i].nota[q];
         }
        aluno[i].media=soma/q;
@@ -75,7 +75,7 @@ int main()
         printf("Data de Nascimento:");
         fgets(aluno[i].data, sizeof(aluno[i].data), stdin);
 
-        for (q = 0; q < 2; q++)
+        for (q = 0; q < 3; q++)
         {
             printf("%d Nota:", q + 1);
             scanf("%f", &aluno[i].nota[q]);
