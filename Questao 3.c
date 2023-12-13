@@ -17,13 +17,13 @@ fflush(stdin);
 }
 
 void a() {
-    printf("=================================\n");
+    printf("-----------------------------\n");
 }
 
 float valorSoma(int contador,struct dados produto[]) {
     int i=contador;
        return produto[i].preco*produto[i].qnt;
-    
+
 }
 
 int subt(int contador,struct dados produto[],int qnt) {
@@ -55,6 +55,7 @@ void imprimir(int contador,struct dados produto[],float soma) {
 
 void imprimirEstoque(int contador,struct dados produto[]) {
     int i;
+    printf("Todos os Produtos comecam com 25 no estoque\n\n");
     for(i=0; i<contador; i++) {
         printf("Nome do Produto:%s",produto[i].nome);
         printf("Quantidade no estoque:%d\n",produto[i].qntTotal);
