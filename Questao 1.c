@@ -48,7 +48,7 @@ int i;
         fgets(pessoa[i].email,sizeof(pessoa[i].email),stdin);
         limpatudo();
     }
-    printf("Digite nome para mostrar o numero");
+    printf("Digite nome para mostrar o numero:");
     fgets(nome,sizeof(nome),stdin);
     validarNumero(pessoa,nome);
 
